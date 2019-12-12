@@ -1,16 +1,33 @@
 import React from "react";
 import "./App.css";
-import PictureComponent from "./components/PictureComponent/PictureComponent";
+import PictureCard from "./components/PictureCard/PictureCard";
+import styled from "styled-components";
+
+const PageContainer = styled.div`
+
+  max-width: 1000px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+`
+
+const AppContainer = styled.div`
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+`
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-      <PictureComponent/>
-    </div>
+    <PageContainer className="App">
+      {/* Read through the instructions in the README.md file to build your NASA app! Have fun 🚀! */}
+      <PictureCard/>
+    </PageContainer>
   );
 }
 
